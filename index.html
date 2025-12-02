@@ -228,6 +228,21 @@
         grid-template-columns: 1fr !important;
       }
     }
+
+    .myCertificates .swiper-slide a,
+.myCertificates .swiper-slide div {
+  height: 350px;            /* Set a fixed equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.myCertificates img {
+  height: 250px;             /* Same image height */
+  object-fit: cover;         /* Crop images nicely */
+  width: 100%;
+}
+
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
