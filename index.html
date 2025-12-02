@@ -32,6 +32,7 @@
   <link rel="preload" href="https://cdn.tailwindcss.com" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
   <!-- CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -394,6 +395,72 @@
     </div>
   </section>
 
+  <section id="certificates" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 section-title mx-auto">
+      Certificates
+    </h2>
+
+    <!-- Swiper Container -->
+    <div class="swiper myCertificates">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide flex justify-center">
+          <a class="bg-white p-4 rounded-xl shadow-lg max-w-sm" href="https://www.hackerrank.com/certificates/e0e690ed4dbf">
+            <img src="download.png" class="rounded-lg mb-4 w-full" />
+            <h3 class="text-xl font-semibold text-center">
+                Introduction to Programming Using JavaScript</h3>
+          </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide flex justify-center">
+          <a class="bg-white p-4 rounded-xl shadow-lg max-w-sm" href="https://www.mygreatlearning.com/certificate/NFFSRUPH">
+            <img src="ai_appliaction.jpg" class="rounded-lg mb-4 w-full" />
+            <h3 class="text-xl font-semibold text-center">Applications of AI</h3>
+          </a>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-4 rounded-xl shadow-lg max-w-sm">
+            <img src="Angular.PNG" class="rounded-lg mb-4 w-full" />
+            <h3 class="text-xl font-semibold text-center">Angular Certificate</h3>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-4 rounded-xl shadow-lg max-w-sm">
+            <img src="JavaScript.PNG" class="rounded-lg mb-4 w-full" />
+            <h3 class="text-xl font-semibold text-center">Javascript Algorithms and Data Structure Certificate</h3>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-4 rounded-xl shadow-lg max-w-sm">
+            <img src="React.PNG" class="rounded-lg mb-4 w-full" />
+            <h3 class="text-xl font-semibold text-center">React Certificate</h3>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-4 rounded-xl shadow-lg max-w-sm">
+            <img src="ResponsiveWebDesign.PNG" class="rounded-lg mb-4 w-full" />
+            <h3 class="text-xl font-semibold text-center">Responsive Web Design Certificate</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+
   <!-- Projects Section -->
   <section id="projects" class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4">
@@ -589,3 +656,29 @@
   </script>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".myCertificates", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
